@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="untitled12" />
         <module name="stream_api" />
+        <module name="stream_api-master - Copy" />
       </profile>
     </annotationProcessing>
   </component>

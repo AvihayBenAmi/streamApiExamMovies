@@ -1,14 +1,18 @@
 package org.example;
 
 import java.util.List;
+import java.util.Random;
 
 public class Movie {
-    private int id;
-    private String title;
-    private Director director;
-    private List<Actor> actors;
-    private int releaseYear;
-    private String genre;
+    private final int id;
+    private final String title;
+    private final Director director;
+    private final List<Actor> actors;
+    private final int releaseYear;
+    private final String genre;
+    private final int rating;
+
+    Random random=new Random();
 
     public Movie(int id, String title, Director director, List<Actor> actors, int releaseYear, String genre) {
         this.id = id;
@@ -17,6 +21,7 @@ public class Movie {
         this.actors = actors;
         this.releaseYear = releaseYear;
         this.genre = genre;
+        this.rating= random.nextInt(0,6);
     }
 
     public int getId() {
@@ -41,5 +46,9 @@ public class Movie {
 
     public String getGenre() {
         return genre;
+    }
+
+    public double getMovieRating(Movie movie) {
+        return rating;
     }
 }

@@ -3,9 +3,9 @@ package org.example;
 import java.util.List;
 
 public class Actor {
-    private int id;
-    private String name;
-    private int birthYear;
+    private final int id;
+    private final String name;
+    private final int birthYear;
 
     public Actor(int id, String name, int birthYear) {
         this.id = id;
